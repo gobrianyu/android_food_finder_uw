@@ -26,7 +26,10 @@ class Venue{
   factory Venue.fromJson(Map<String, dynamic> json) => _$VenueFromJson(json);
   Map<String, dynamic> toJson() => _$VenueToJson(this);
 
-  // TODO(you): Add distanceFrom method here
+  // Returns the distance to venue from given latitude and longitude parameters
+  double distanceFrom({required double latitude, required double longitude}) {
+    return sqrt(_squared(this.latitude - latitude) + _squared(this.longitude - longitude));
+  }
 
   double distanceInMeters({required double latitude, required double longitude}){
     return 111139 * distanceFrom(latitude: latitude, longitude: longitude);

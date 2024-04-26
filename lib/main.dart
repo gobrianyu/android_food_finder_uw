@@ -19,7 +19,8 @@ void main() {
   loadVenuesDB(dataPath).then((value) => runApp(
     MultiProvider(
       providers: [
-        // TODO(you): Fill this in to create both Providers we need
+        ChangeNotifierProvider<PositionProvider>(create: (context) => PositionProvider()),
+        ChangeNotifierProvider<WeatherProvider>(create: (context) => WeatherProvider()),
       ],
       child: FoodFinderApp(venues: value))));
 }

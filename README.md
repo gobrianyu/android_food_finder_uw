@@ -1,11 +1,11 @@
 # Food Finder
 
 ## Student Information
-Name:
+Name: Brian Yu
 
-CSE netid:
+CSE netid: brian127
 
-email:
+email: brian127@uw.edu
 
 ## Design Vision
 Tell us about what your design vision was.
@@ -22,7 +22,27 @@ Cite anything (website or other resource) or anyone that assisted you in creatin
 
 Remember to include all online resources (other than information learned in lecture or section and android documentation) such as Stack Overflow, other blogs, students in this class, or TAs and instructors who helped you during Office Hours. If you did not use any such resources, please state so explicitly.
 
-Answer here: (delete this prompt)
+Answer here: 
+https://dart.dev/guides/libraries/futures-error-handling
+https://api.flutter.dev/flutter/dart-async/Future/then.html
+https://stackoverflow.com/questions/73352447/why-visual-studio-code-does-not-recognize-my-phone
+https://stackoverflow.com/questions/49713189/how-to-use-conditional-statement-within-child-attribute-of-a-flutter-widget-cen
+https://stackoverflow.com/questions/54783316/flutter-geolocator-package-not-retrieving-location
+https://developer.android.com/guide/topics/manifest/uses-permission-element
+https://pub.dev/packages/geolocator
+https://stackoverflow.com/questions/71110157/flutter-geolocator-returning-0-0
+https://api.flutter.dev/flutter/widgets/GridView-class.html
+https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html
+https://api.flutter.dev/flutter/painting/TextStyle-class.html
+https://stackoverflow.com/questions/57777737/flutter-give-container-rounded-border
+https://www.dhiwise.com/post/unravel-the-dart-delay-function-in-flutter
+https://stackoverflow.com/questions/70098876/creating-a-dynamic-list-of-animated-containers-that-can-have-different-propertie
+https://stackoverflow.com/questions/43149055/how-do-i-open-a-web-browser-url-from-my-flutter-code
+https://pub.dev/packages/url_launcher
+https://docs.flutter.dev/packages-and-plugins/using-packages
+https://stackoverflow.com/questions/62265548/flutter-how-to-access-property-from-its-state-class
+https://api.flutter.dev/flutter/widgets/GestureDetector-class.html
+https://stackoverflow.com/questions/62067082/unhandled-exception-cannot-hit-test-a-render-box-with-no-size
 
 ## Reflection Prompts
 
@@ -31,21 +51,29 @@ What new tools, techniques, or other skills did you learn while doing this assig
 
 How do you think you might use what you learned in the future?
 
-Answer here: (delete this prompt)
+- Went into xml files to fix some compatibility issues in order to get the geolocator to work
+- Gained experience working with futures
+- Learned how to put launch urls from an app
+- First time using scroll views
 
 ## Challenges
 What was hard about doing this assignment?
 What did you learn from working through those challenges?
 How could the assignment be improved for future years?
 
-Answer here: (delete this prompt)
+- Time management hahaha
+- There's still so much more I want to do with this assignment, and there are still 
+  some wrapping issues I would like to fix up for the resubmission cycle.
+- I do think this project is maybe too open ended. I ended up planning out far more than 
+  I realized I could pull of within a week (taking into account all the homework I also
+  had to do for my other classes)
 
 ### Mistakes
 What is one mistake that you made or misunderstanding that you had while you were completing this assignment?
 
 What is something that you learned or will change in the future as a result of this mistake or misunderstanding?
 
-Answer here: (delete this prompt)
+Ugh where do I start? The number of times this darn app crashed on me was so frustrating. As I hinted at earlier, I ended up digging through forums online trying to figure out why the _determinePosition function I copied in just wasn't working. In the end I solved it by adding two new permissions in an android xml file. I made lots of mistakes with general usage of different widgets as well, and especially when I was working with futures.
 
 ### Optional Challenges
 Tell us about what you did, learned, and struggled with while tackling some of the optional challenges.

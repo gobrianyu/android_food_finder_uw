@@ -1,6 +1,11 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:food_finder/models/venues_db.dart';
 import 'package:food_finder/helpers/weather_checker.dart';
+import 'package:food_finder/views/header.dart';
+import 'package:food_finder/views/venue_list.dart';
+import 'package:food_finder/weather_conditions.dart';
 import 'package:provider/provider.dart';
 import 'package:food_finder/providers/position_provider.dart';
 import 'package:food_finder/providers/weather_provider.dart';
@@ -26,18 +31,27 @@ class _FoodFinderAppState extends State<FoodFinderApp> {
 
   @override
   initState(){
-    // TODO(you): Initialize the _checkerTimer and _weatherChecker here
-    // ---> Your code from the Weather app may be helpful to refer to 
+    super.initState();
+    final singleUseWeatherProvider = Provider.of<WeatherProvider>(context, listen: false);
+    _weatherChecker = WeatherChecker(singleUseWeatherProvider);
 
-    // This way we don't have to wait a minute from after the app starts to first attempt a weather check.
-    _weatherChecker.fetchAndUpdateCurrentSeattleWeather();
+    // This way we don't have to wait a minute from after
+    // the app starts to first attempt a weather check.
+    Future.delayed(const Duration(seconds: 4), () {
+      _weatherChecker.fetchAndUpdateCurrentSeattleWeather();
+      singleUseWeatherProvider.isLoaded = true;
+    });
 
-
+    _checkerTimer = Timer.periodic(const Duration(seconds: 60), (timer) {
+      _weatherChecker.fetchAndUpdateCurrentSeattleWeather();
+      singleUseWeatherProvider.isLoaded = true;
+    });
   }
 
   @override 
   dispose(){
-    // TODO(you):  Cancel our timer when we are no longer needed so we don't leak
+    _checkerTimer.cancel();
+    super.dispose();
   }
 
   @override
@@ -47,17 +61,19 @@ class _FoodFinderAppState extends State<FoodFinderApp> {
             child: Scaffold(
               // This is how you can consume from two providers at once without 
               // needing to nest Consumers inside each other 
-              body: Consumer2<PositionProvider, WeatherProvider>( 
+              body: Consumer2<PositionProvider, WeatherProvider>(
                 builder: (context, positionProvider, weatherProvider, child) {
-                  // TODO(you): If position is known, call weatherChecker.updateLocation with our current position
-
-                  // TODO(you): Remove this placeholder, and add your views here.
-                  // Keep this as tidy and readable as you can by, relying on custom Widgets you define 
-                  // to create the view tree. 
-                  // VSCode makes this easy... check out the Extract Widget feature described here: 
-                  //  https://medium.com/flutter-community/flutter-visual-studio-code-shortcuts-for-fast-and-efficient-development-7235bc6c3b7d
-                  // Please place each custom Widget in their own file in the views/ directory.
-                  return Placeholder();
+                  if (positionProvider.status) {
+                    _weatherChecker.updateLocation(positionProvider.latitude, positionProvider.longitude);
+                  }
+                  if (!positionProvider.status) {
+                    return WeatherHeader(weatherProvider.condition, 200, 200); // Maximum possible coordinates are 180 so this default is fine
+                  } else {
+                    return Container(
+                      child: Column(children: [WeatherHeader(weatherProvider.condition, positionProvider.latitude, positionProvider.longitude), 
+                      VenueList(widget.venues.nearestTo(latitude: positionProvider.latitude, longitude: positionProvider.longitude, condition: WeatherCondition.sunny).toList(), positionProvider.latitude, positionProvider.longitude)]),
+                    );
+                  }
                 } 
               ),
             ),
