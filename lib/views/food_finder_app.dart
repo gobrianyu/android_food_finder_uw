@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:food_finder/models/venues_db.dart';
 import 'package:food_finder/helpers/weather_checker.dart';
