@@ -5,7 +5,8 @@
         "longitude": -122.31285800188569,
         "url": "https://freshudon.com/udon-university",
         "has_patio": false,
-        "cuisine": "Japanese"
+        "cuisine": "Japanese",
+        "image": "assets/u_don.jpg"
     },
     {
         "name": "Saint Bread",
@@ -13,7 +14,8 @@
         "longitude": -122.31297,
         "url": "https://saintbread.com/",
         "has_patio": true,
-        "cuisine": "Bakery"
+        "cuisine": "Bakery",
+        "image": "assets/saint_bread.jpg"
     },
     {
         "name": "Morsel",
@@ -21,7 +23,8 @@
         "longitude": -122.31287231699613,
         "url": "https://morselseattle.com",
         "has_patio": false,
-        "cuisine": "Cafe"
+        "cuisine": "Cafe",
+        "image": "assets/morsel.jpeg"
     },
     {
         "name": "Agua Verde Cafe",
@@ -29,7 +32,8 @@
         "longitude":  -122.31400147327928,
         "url": "https://aguaverdecafe.com",
         "has_patio": true,
-        "cuisine": "Cafe"
+        "cuisine": "Cafe",
+        "image": "assets/agua_verde_cafe.jpg"
     },
     {
         "name": "Fern Thai Eatery & Bar",
@@ -37,7 +41,8 @@
         "longitude": -122.31929794732181,
         "url": "https://www.fernthaioncaphill.com",
         "has_patio": false,
-        "cuisine": "Thai"
+        "cuisine": "Thai",
+        "image": "assets/fern_thai_eatery_&_bar.png"
     },
     {
         "name": "Pizzeria La Rocca",
@@ -45,15 +50,17 @@
         "longitude": -122.3552034,
         "url": "https://pizzalarocca.com",
         "has_patio": true,
-        "cuisine": "Pizza"
+        "cuisine": "Pizza",
+        "image": "assets/pizzeria_la_rocca.png"
     },
     {
-        "name": "Bizarro",
+        "name": "Bizzarro",
         "latitude": 47.66217889627344,
         "longitude": -122.34180049162336,
         "url": "https://www.bizzarroitaliancafe.com/",
         "has_patio": false,
-        "cuisine": "Italian"
+        "cuisine": "Italian",
+        "image": "assets/bizzarro.jpg"
     },
     {
         "name": "Seattle Best Tea",
@@ -61,7 +68,8 @@
         "longitude": -122.31318693912908,
         "url": "https://www.seattlebesttea.com/",
         "has_patio": false,
-        "cuisine": "Cafe"
+        "cuisine": "Cafe",
+        "image": "assets/seattle_best_tea.jpg"
     },
     {
         "name": "Kamonegi",
@@ -69,7 +77,8 @@
         "longitude": -122.34435514465629,
         "url": "https://www.kamonegiseattle.com/",
         "has_patio": false,
-        "cuisine": "Japanese"
+        "cuisine": "Japanese",
+        "image": "assets/kamonegi.jpg"
     },
     {
         "name": "Toyoda Sushi",
@@ -77,15 +86,17 @@
         "longitude": -122.2950391287354,
         "url": "https://www.facebook.com/toyodasushi",
         "has_patio": false,
-        "cuisine": "Japanese"
+        "cuisine": "Japanese",
+        "image": "assets/toyoda_sushi.jpg"
     },
     {
-        "name": "Costas",
+        "name": "Costa's",
         "latitude": 47.66299606567164,
         "longitude": -122.3133402662642,
         "url": "https://www.costasseattle.com/",
         "has_patio": false,
-        "cuisine": "Greek"
+        "cuisine": "Greek",
+        "image": "assets/costa's.jpg"
     },
     {
         "name": "Arigato Sushi",
@@ -93,7 +104,8 @@
         "longitude":  -122.35417786739815,
         "url": "http://arigato.menu11.com/",
         "has_patio": true,
-        "cuisine": "Japanese"
+        "cuisine": "Japanese",
+        "image": "assets/arigato_sushi.jpg"
     },
     {
         "name": "Oxbow",
@@ -101,7 +113,8 @@
         "longitude":  -122.30203964468622,
         "url": "https://www.oxbowmontlake.com/",
         "has_patio": false,
-        "cuisine": "Bakery"
+        "cuisine": "Bakery",
+        "image": "assets/oxbow.jpg"
     },
     {
         "name": "Portage Bay Cafe",
@@ -109,15 +122,17 @@
         "longitude":  -122.31768283430614,
         "url": "https://www.portagebaycafe.com/",
         "has_patio": true,
-        "cuisine": "Cafe"
+        "cuisine": "Cafe",
+        "image": "assets/portage_bay_cafe.jpg"
     },
     {
-        "name": "Sultan Gyros Grill",
+        "name": "Sultan Gyro Grill",
         "latitude": 47.65916097098205,
         "longitude": -122.31296787548699,
         "url": "https://www.yelp.com/biz/sultan-gyro-grill-and-shawarma-seattle",
         "has_patio": false,
-        "cuisine": "Mediterranean"
+        "cuisine": "Mediterranean",
+        "image": "assets/sultan_gyro_grill.png"
     },
     {
         "name": "Aladdin CharBurger",
@@ -125,7 +140,8 @@
         "longitude":  -122.31327179691436,
         "url": "https://www.aladdincharburger.com/",
         "has_patio": false,
-        "cuisine": "Burger"
+        "cuisine": "Burger",
+        "image": "assets/aladdin_charburger.jpg"
     },
     {
         "name": "Thai Tom",
@@ -133,7 +149,8 @@
         "longitude": -122.31306794488486,
         "url": "https://thaitomseattle.com/",
         "has_patio": false,
-        "cuisine": "Thai"
+        "cuisine": "Thai",
+        "image": "assets/thai_tom.jpg"
     },
     {
         "name": "Issian",
@@ -141,7 +158,8 @@
         "longitude": -122.33828702139809,
         "url": "https://issianjapanesestonegrill.weebly.com/",
         "has_patio": false,
-        "cuisine": "Japanese"
+        "cuisine": "Japanese",
+        "image": "assets/issian.png"
     },
     {
         "name": "Samurai Noodle",
@@ -149,7 +167,8 @@
         "longitude": -122.31205702767754,
         "url": "https://www.samurainoodle.com/",
         "has_patio": false,
-        "cuisine": "Japanese"
+        "cuisine": "Japanese",
+        "image": "assets/samurai_noodle.jpg"
     },
     {
         "name": "Ezell's Famous Chicken",
@@ -157,7 +176,8 @@
         "longitude": -122.33089907796148,
         "url": "https://ezellschicken.com/",
         "has_patio": false,
-        "cuisine": "Chicken"
+        "cuisine": "Fast Food",
+        "image": "assets/ezell's_famous_chicken.jpg"
     },
     {
         "name": "Birria Pepe El Toro",
@@ -165,7 +185,8 @@
         "longitude": -122.3127671898264,
         "url": "https://www.birrieria-pepeeltoro.com/",
         "has_patio": false,
-        "cuisine": "Mexican"
+        "cuisine": "Mexican",
+        "image": "assets/birria_pepe_el_toro.jpg"
     },
     {
         "name": "Cafe on the Ave",
@@ -173,7 +194,8 @@
         "longitude": -122.31332774551767,
         "url": "https://cafeontheave.site/",
         "has_patio": true,
-        "cuisine": "Cafe"
+        "cuisine": "Cafe",
+        "image": "assets/cafe_on_the_ave.jpg"
     },
     {
         "name": "Hiroshi's Poke",
@@ -181,7 +203,8 @@
         "longitude": -122.31620878961279,
         "url": "https://www.example.com",
         "has_patio": false,
-        "cuisine": "Hawaiian"
+        "cuisine": "Hawaiian",
+        "image": "assets/hiroshi's_poke.jpg"
     },
     {
         "name": "One Day Cafe",
@@ -189,7 +212,8 @@
         "longitude": -122.48503180040143,
         "url": "https://www.instagram.com/onedaycafe.wa/",
         "has_patio": false,
-        "cuisine": "Cafe"
+        "cuisine": "Cafe",
+        "image": "assets/one_day_cafe.png"
     },
     {
         "name": "Local Public Eatery",
@@ -197,7 +221,8 @@
         "longitude": -123.10392684758963,
         "url": "https://localpubliceatery.com/neighbourhoods/gastown/",
         "has_patio": true,
-        "cuisine": "Bar"
+        "cuisine": "Bar",
+        "image": "assets/local_public_eatery.jpg"
     },
     {
         "name": "Himitsu Teriyaki",
@@ -205,16 +230,18 @@
         "longitude": -122.31002692371351,
         "url": "https://himitsuteriyaki.menu11.com/",
         "has_patio": false,
-        "cuisine": "Japanese"
+        "cuisine": "Japanese",
+        "image": "assets/saint_bread.jpg"
     },
 
     {
-        "name": "Jacks BBQ",
+        "name": "Jack's BBQ",
         "latitude": 47.5687569628992,
         "longitude": -122.32207940795915,
         "url": "https://jacksbbq.com/",
         "has_patio": true,
-        "cuisine": "BBQ"
+        "cuisine": "BBQ",
+        "image": "assets/jack's_bbq.png"
     },
 
     {
@@ -223,7 +250,8 @@
         "longitude": -122.2848895,
         "url": "https://www.geraldinescounter.com/?utm_source=gmb",
         "has_patio": true,
-        "cuisine": "Breakfast"
+        "cuisine": "Breakfast",
+        "image": "assets/geraldine's.jpg"
     },
 
     {
@@ -232,7 +260,8 @@
         "longitude": -122.34631087836202,
         "url": "http://uneedaburger.com/",
         "has_patio": true,
-        "cuisine": "Burger"
+        "cuisine": "Burger",
+        "image": "assets/uneeda_burger.jpg"
     },
     {
         "name": "Brick'N'Cheese Seattle",
@@ -240,7 +269,8 @@
         "longitude": -122.31510526910094,
         "url": "https://brickncheese.com/",
         "has_patio": false,
-        "cuisine": "French"
+        "cuisine": "French",
+        "image": "assets/brick'n'cheese_seattle.jpg"
     },
 
     {
@@ -249,7 +279,8 @@
         "longitude": -122.27748799259626,
         "url": "https://www.theflourboxseattle.com/",
         "has_patio": true,
-        "cuisine": "Bakery"
+        "cuisine": "Bakery",
+        "image": "assets/the_flour_box.png"
     },
     {
         "name": "Cafe Javasti",
@@ -257,7 +288,8 @@
         "longitude": -122.2908980009539,
         "url": "http://javasti.com/",
         "has_patio": false,
-        "cuisine": "Bakery"
+        "cuisine": "Bakery",
+        "image": "assets/cafe_javasti.png"
     },
     {
         "name": "Thanh Vị",
@@ -265,7 +297,8 @@
         "longitude": -122.31298398800003,
         "url": "https://thanhviudistrict.com/",
         "has_patio": false,
-        "cuisine": "Vietnamese"
+        "cuisine": "Vietnamese",
+        "image": "assets/thanh_vi.jpg"
     },
     {
         "name": "Nana's Green Tea",
@@ -273,7 +306,8 @@
         "longitude": -122.33291129084073,
         "url": "https://www.nanasgreenteaseattle.com/",
         "has_patio": true,
-        "cuisine": "Japanese Dessert"
+        "cuisine": "Japanese",
+        "image": "assets/nana's_green_tea.png"
     },
     {
         "name": "Sizzle & Crunch",
@@ -281,7 +315,8 @@
         "longitude": -122.31358965398644,
         "url": "https://sizzleandcrunch.com/",
         "has_patio": false,
-        "cuisine": "Vietnamese"
+        "cuisine": "Vietnamese",
+        "image": "assets/sizzle_&_crunch.jpg"
     },
     {
         "name": "Moge Tee",
@@ -289,7 +324,8 @@
         "longitude": -122.30919989893854,
         "url": "https://www.mogeteeusa.com/home",
         "has_patio": false,
-        "cuisine": "Cafe"
+        "cuisine": "Cafe",
+        "image": "assets/moge_tee.png"
     },
     {
         "name": "Araya's Place",
@@ -297,14 +333,16 @@
         "longitude": -122.31411538487157,
         "url": "http://www.arayasplace.com/",
         "has_patio": false,
-        "cuisine": "Thai"
+        "cuisine": "Thai",
+        "image": "assets/araya's_place.jpg"
     },
     {
-        "name": "Aladdin's",
+        "name": "Aladdin Gyro-Cery",
         "latitude": 47.657960,
         "longitude": -122.313390,
         "url": "https://www.aladdingyro.com",
         "has_patio": true,
-        "cuisine": "Mediterranean"
+        "cuisine": "Mediterranean",
+        "image": "assets/aladdin_gyro-cery.jpg"
     }
 ]

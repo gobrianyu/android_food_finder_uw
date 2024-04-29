@@ -12,6 +12,8 @@ Venue _$VenueFromJson(Map<String, dynamic> json) => Venue(
       longitude: (json['longitude'] as num).toDouble(),
       hasPatio: json['has_patio'] as bool,
       url: json['url'] as String,
+      cuisine: json['cuisine'] as String,
+      image: json['image'] as String,
     );
 
 Map<String, dynamic> _$VenueToJson(Venue instance) => <String, dynamic>{
@@ -20,4 +22,6 @@ Map<String, dynamic> _$VenueToJson(Venue instance) => <String, dynamic>{
       'longitude': instance.longitude,
       'url': instance.url,
       'has_patio': instance.hasPatio,
+      'cuisine' : instance.cuisine,
+      'image' : instance.image,
     };

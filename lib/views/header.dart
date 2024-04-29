@@ -28,24 +28,70 @@ class WeatherHeader extends StatelessWidget {
 
 
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       height: 100,
-      color: Color.fromARGB(255, 126, 189, 241), 
-      child: Row(children: 
-        [Expanded(flex:8, child: Builder(
-          builder: (context) {
-            if (latitude > 180) {
-              return Column(children:[Text('Loading'), Text('Location')], mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start);
-            } else {
-              return Column(children:[Text('Current Location:', style: TextStyle(fontWeight: FontWeight.bold)), Text('$roundedLatitude, $roundedLongitude')], mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment: CrossAxisAlignment.start,);
-            }
-          }
-        )), Expanded(flex:5, child:
-        Container(child: Icon(weatherIcon, color: Colors.black, size: 40), alignment: Alignment.centerRight,)),Expanded(flex:4, child: Builder(builder: (context) {
-          if (conditionText == '') {
-            return Column(mainAxisAlignment: MainAxisAlignment.center, children: [Text('  Loading', style: TextStyle(fontSize: 15)), Text('  Weather', style: TextStyle(fontSize: 15))]);  
-          }
-          return Text('   $conditionText', style: TextStyle(fontSize: 18));
-        } ))]));
+      decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 241, 229, 126),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.4),
+              spreadRadius: 4,
+              blurRadius: 7,
+              offset: Offset(0, 2),
+            )
+          ]
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            flex:8,
+            child: Builder(
+              builder: (context) {
+                if (latitude > 180) {
+                  return const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [Text('Loading'), Text('Location')],
+                  );
+                } else {
+                  return Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text('Current Location:', style: TextStyle(fontWeight: FontWeight.bold)), 
+                            Text('$roundedLatitude, $roundedLongitude')
+                    ],
+                  );
+                }
+              }
+            )
+          ),
+          Expanded(
+            flex: 5,
+            child: Container(
+              alignment: Alignment.centerRight,
+              child: Icon(weatherIcon, color: Colors.black, size: 40),
+            )
+          ),
+          Expanded(
+            flex: 4,
+            child: Builder(
+              builder: (context) {
+                if (conditionText == '') {
+                  return const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                        Text('  Loading', style: TextStyle(fontSize: 15)),
+                        Text('  Weather', style: TextStyle(fontSize: 15)),
+                    ]
+                  );  
+                }
+                return Text('   $conditionText', style: const TextStyle(fontSize: 18));
+              }
+            )
+          )
+        ],
+      )
+    );
   }
 }

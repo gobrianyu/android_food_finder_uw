@@ -3,7 +3,6 @@ import 'package:food_finder/models/venues_db.dart';
 import 'package:food_finder/helpers/weather_checker.dart';
 import 'package:food_finder/views/header.dart';
 import 'package:food_finder/views/venue_list.dart';
-import 'package:food_finder/weather_conditions.dart';
 import 'package:provider/provider.dart';
 import 'package:food_finder/providers/position_provider.dart';
 import 'package:food_finder/providers/weather_provider.dart';
@@ -68,14 +67,27 @@ class _FoodFinderAppState extends State<FoodFinderApp> {
                     return WeatherHeader(weatherProvider.condition, 200, 200); // Maximum possible coordinates are 180 so this default is fine
                   } else {
                     return Container(
-                      child: Column(children: [WeatherHeader(weatherProvider.condition, positionProvider.latitude, positionProvider.longitude), 
-                      VenueList(widget.venues.nearestTo(latitude: positionProvider.latitude, longitude: positionProvider.longitude, condition: WeatherCondition.sunny).toList(), positionProvider.latitude, positionProvider.longitude)]),
+                      child: ListView(
+                        children: [
+                          WeatherHeader(
+                              weatherProvider.condition,
+                              positionProvider.latitude,
+                              positionProvider.longitude), 
+                          VenueList(widget.venues.nearestTo(
+                              latitude: positionProvider.latitude,
+                              longitude: positionProvider.longitude,
+                              condition: weatherProvider.condition,
+                          ).toList(),
+                          positionProvider.latitude,
+                          positionProvider.longitude),
+                        ]
+                      ),
                     );
                   }
                 } 
               ),
             ),
-          )
+        )
     );
   }
 }

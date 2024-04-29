@@ -13,12 +13,16 @@ class Venue{
          required this.latitude, 
          required this.longitude, 
          required this.hasPatio,
-         required this.url});
+         required this.url,
+         required this.cuisine,
+         this.image = '',});
   
   final String name;
   final double latitude;
   final double longitude;
   final String url;
+  final String cuisine;
+  final String image;
 
   @JsonKey(name: 'has_patio')
   final bool hasPatio;
