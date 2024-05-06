@@ -6,7 +6,7 @@
         "url": "https://freshudon.com/udon-university",
         "has_patio": false,
         "cuisine": "Japanese",
-        "image": "assets/u_don.jpg"
+        "image": "assets/venue_images/u_don.jpg"
     },
     {
         "name": "Saint Bread",
@@ -15,7 +15,7 @@
         "url": "https://saintbread.com/",
         "has_patio": true,
         "cuisine": "Bakery",
-        "image": "assets/saint_bread.jpg"
+        "image": "assets/venue_images/saint_bread.jpg"
     },
     {
         "name": "Morsel",
@@ -24,7 +24,7 @@
         "url": "https://morselseattle.com",
         "has_patio": false,
         "cuisine": "Cafe",
-        "image": "assets/morsel.jpeg"
+        "image": "assets/venue_images/morsel.jpeg"
     },
     {
         "name": "Agua Verde Cafe",
@@ -33,7 +33,7 @@
         "url": "https://aguaverdecafe.com",
         "has_patio": true,
         "cuisine": "Cafe",
-        "image": "assets/agua_verde_cafe.jpg"
+        "image": "assets/venue_images/agua_verde_cafe.jpg"
     },
     {
         "name": "Fern Thai Eatery & Bar",
@@ -42,7 +42,7 @@
         "url": "https://www.fernthaioncaphill.com",
         "has_patio": false,
         "cuisine": "Thai",
-        "image": "assets/fern_thai_eatery_&_bar.png"
+        "image": "assets/venue_images/fern_thai_eatery_&_bar.png"
     },
     {
         "name": "Pizzeria La Rocca",
@@ -51,7 +51,7 @@
         "url": "https://pizzalarocca.com",
         "has_patio": true,
         "cuisine": "Pizza",
-        "image": "assets/pizzeria_la_rocca.png"
+        "image": "assets/venue_images/pizzeria_la_rocca.png"
     },
     {
         "name": "Bizzarro",
@@ -60,7 +60,7 @@
         "url": "https://www.bizzarroitaliancafe.com/",
         "has_patio": false,
         "cuisine": "Italian",
-        "image": "assets/bizzarro.jpg"
+        "image": "assets/venue_images/bizzarro.jpg"
     },
     {
         "name": "Seattle Best Tea",
@@ -69,7 +69,7 @@
         "url": "https://www.seattlebesttea.com/",
         "has_patio": false,
         "cuisine": "Cafe",
-        "image": "assets/seattle_best_tea.jpg"
+        "image": "assets/venue_images/seattle_best_tea.jpg"
     },
     {
         "name": "Kamonegi",
@@ -78,7 +78,7 @@
         "url": "https://www.kamonegiseattle.com/",
         "has_patio": false,
         "cuisine": "Japanese",
-        "image": "assets/kamonegi.jpg"
+        "image": "assets/venue_images/kamonegi.jpg"
     },
     {
         "name": "Toyoda Sushi",
@@ -87,7 +87,7 @@
         "url": "https://www.facebook.com/toyodasushi",
         "has_patio": false,
         "cuisine": "Japanese",
-        "image": "assets/toyoda_sushi.jpg"
+        "image": "assets/venue_images/toyoda_sushi.jpg"
     },
     {
         "name": "Costa's",
@@ -96,7 +96,7 @@
         "url": "https://www.costasseattle.com/",
         "has_patio": false,
         "cuisine": "Greek",
-        "image": "assets/costa's.jpg"
+        "image": "assets/venue_images/costa's.jpg"
     },
     {
         "name": "Arigato Sushi",
@@ -105,7 +105,7 @@
         "url": "http://arigato.menu11.com/",
         "has_patio": true,
         "cuisine": "Japanese",
-        "image": "assets/arigato_sushi.jpg"
+        "image": "assets/venue_images/arigato_sushi.jpg"
     },
     {
         "name": "Oxbow",
@@ -114,7 +114,7 @@
         "url": "https://www.oxbowmontlake.com/",
         "has_patio": false,
         "cuisine": "Bakery",
-        "image": "assets/oxbow.jpg"
+        "image": "assets/venue_images/oxbow.jpg"
     },
     {
         "name": "Portage Bay Cafe",
@@ -123,7 +123,7 @@
         "url": "https://www.portagebaycafe.com/",
         "has_patio": true,
         "cuisine": "Cafe",
-        "image": "assets/portage_bay_cafe.jpg"
+        "image": "assets/venue_images/portage_bay_cafe.jpg"
     },
     {
         "name": "Sultan Gyro Grill",
@@ -132,7 +132,7 @@
         "url": "https://www.yelp.com/biz/sultan-gyro-grill-and-shawarma-seattle",
         "has_patio": false,
         "cuisine": "Mediterranean",
-        "image": "assets/sultan_gyro_grill.png"
+        "image": "assets/venue_images/sultan_gyro_grill.png"
     },
     {
         "name": "Aladdin CharBurger",
@@ -141,7 +141,7 @@
         "url": "https://www.aladdincharburger.com/",
         "has_patio": false,
         "cuisine": "Burger",
-        "image": "assets/aladdin_charburger.jpg"
+        "image": "assets/venue_images/aladdin_charburger.jpg"
     },
     {
         "name": "Thai Tom",
@@ -150,7 +150,7 @@
         "url": "https://thaitomseattle.com/",
         "has_patio": false,
         "cuisine": "Thai",
-        "image": "assets/thai_tom.jpg"
+        "image": "assets/venue_images/thai_tom.jpg"
     },
     {
         "name": "Issian",
@@ -159,7 +159,7 @@
         "url": "https://issianjapanesestonegrill.weebly.com/",
         "has_patio": false,
         "cuisine": "Japanese",
-        "image": "assets/issian.png"
+        "image": "assets/venue_images/issian.png"
     },
     {
         "name": "Samurai Noodle",
@@ -168,7 +168,7 @@
         "url": "https://www.samurainoodle.com/",
         "has_patio": false,
         "cuisine": "Japanese",
-        "image": "assets/samurai_noodle.jpg"
+        "image": "assets/venue_images/samurai_noodle.jpg"
     },
     {
         "name": "Ezell's Famous Chicken",
@@ -177,7 +177,7 @@
         "url": "https://ezellschicken.com/",
         "has_patio": false,
         "cuisine": "Fast Food",
-        "image": "assets/ezell's_famous_chicken.jpg"
+        "image": "assets/venue_images/ezell's_famous_chicken.jpg"
     },
     {
         "name": "Birria Pepe El Toro",
@@ -186,7 +186,7 @@
         "url": "https://www.birrieria-pepeeltoro.com/",
         "has_patio": false,
         "cuisine": "Mexican",
-        "image": "assets/birria_pepe_el_toro.jpg"
+        "image": "assets/venue_images/birria_pepe_el_toro.jpg"
     },
     {
         "name": "Cafe on the Ave",
@@ -195,7 +195,7 @@
         "url": "https://cafeontheave.site/",
         "has_patio": true,
         "cuisine": "Cafe",
-        "image": "assets/cafe_on_the_ave.jpg"
+        "image": "assets/venue_images/cafe_on_the_ave.jpg"
     },
     {
         "name": "Hiroshi's Poke",
@@ -204,7 +204,7 @@
         "url": "https://www.example.com",
         "has_patio": false,
         "cuisine": "Hawaiian",
-        "image": "assets/hiroshi's_poke.jpg"
+        "image": "assets/venue_images/hiroshi's_poke.jpg"
     },
     {
         "name": "One Day Cafe",
@@ -213,7 +213,7 @@
         "url": "https://www.instagram.com/onedaycafe.wa/",
         "has_patio": false,
         "cuisine": "Cafe",
-        "image": "assets/one_day_cafe.png"
+        "image": "assets/venue_images/one_day_cafe.png"
     },
     {
         "name": "Local Public Eatery",
@@ -222,7 +222,7 @@
         "url": "https://localpubliceatery.com/neighbourhoods/gastown/",
         "has_patio": true,
         "cuisine": "Bar",
-        "image": "assets/local_public_eatery.jpg"
+        "image": "assets/venue_images/local_public_eatery.jpg"
     },
     {
         "name": "Himitsu Teriyaki",
@@ -231,7 +231,7 @@
         "url": "https://himitsuteriyaki.menu11.com/",
         "has_patio": false,
         "cuisine": "Japanese",
-        "image": "assets/saint_bread.jpg"
+        "image": "assets/venue_images/saint_bread.jpg"
     },
 
     {
@@ -241,7 +241,7 @@
         "url": "https://jacksbbq.com/",
         "has_patio": true,
         "cuisine": "BBQ",
-        "image": "assets/jack's_bbq.png"
+        "image": "assets/venue_images/jack's_bbq.png"
     },
 
     {
@@ -251,7 +251,7 @@
         "url": "https://www.geraldinescounter.com/?utm_source=gmb",
         "has_patio": true,
         "cuisine": "Breakfast",
-        "image": "assets/geraldine's.jpg"
+        "image": "assets/venue_images/geraldine's.jpg"
     },
 
     {
@@ -261,7 +261,7 @@
         "url": "http://uneedaburger.com/",
         "has_patio": true,
         "cuisine": "Burger",
-        "image": "assets/uneeda_burger.jpg"
+        "image": "assets/venue_images/uneeda_burger.jpg"
     },
     {
         "name": "Brick'N'Cheese Seattle",
@@ -270,7 +270,7 @@
         "url": "https://brickncheese.com/",
         "has_patio": false,
         "cuisine": "French",
-        "image": "assets/brick'n'cheese_seattle.jpg"
+        "image": "assets/venue_images/brick'n'cheese_seattle.jpg"
     },
 
     {
@@ -280,7 +280,7 @@
         "url": "https://www.theflourboxseattle.com/",
         "has_patio": true,
         "cuisine": "Bakery",
-        "image": "assets/the_flour_box.png"
+        "image": "assets/venue_images/the_flour_box.png"
     },
     {
         "name": "Cafe Javasti",
@@ -289,7 +289,7 @@
         "url": "http://javasti.com/",
         "has_patio": false,
         "cuisine": "Bakery",
-        "image": "assets/cafe_javasti.png"
+        "image": "assets/venue_images/cafe_javasti.png"
     },
     {
         "name": "Thanh Vị",
@@ -298,7 +298,7 @@
         "url": "https://thanhviudistrict.com/",
         "has_patio": false,
         "cuisine": "Vietnamese",
-        "image": "assets/thanh_vi.jpg"
+        "image": "assets/venue_images/thanh_vi.jpg"
     },
     {
         "name": "Nana's Green Tea",
@@ -307,7 +307,7 @@
         "url": "https://www.nanasgreenteaseattle.com/",
         "has_patio": true,
         "cuisine": "Japanese",
-        "image": "assets/nana's_green_tea.png"
+        "image": "assets/venue_images/nana's_green_tea.png"
     },
     {
         "name": "Sizzle & Crunch",
@@ -316,7 +316,7 @@
         "url": "https://sizzleandcrunch.com/",
         "has_patio": false,
         "cuisine": "Vietnamese",
-        "image": "assets/sizzle_&_crunch.jpg"
+        "image": "assets/venue_images/sizzle_&_crunch.jpg"
     },
     {
         "name": "Moge Tee",
@@ -325,7 +325,7 @@
         "url": "https://www.mogeteeusa.com/home",
         "has_patio": false,
         "cuisine": "Cafe",
-        "image": "assets/moge_tee.png"
+        "image": "assets/venue_images/moge_tee.png"
     },
     {
         "name": "Araya's Place",
@@ -334,7 +334,7 @@
         "url": "http://www.arayasplace.com/",
         "has_patio": false,
         "cuisine": "Thai",
-        "image": "assets/araya's_place.jpg"
+        "image": "assets/venue_images/araya's_place.jpg"
     },
     {
         "name": "Aladdin Gyro-Cery",
@@ -343,6 +343,6 @@
         "url": "https://www.aladdingyro.com",
         "has_patio": true,
         "cuisine": "Mediterranean",
-        "image": "assets/aladdin_gyro-cery.jpg"
+        "image": "assets/venue_images/aladdin_gyro-cery.jpg"
     }
 ]

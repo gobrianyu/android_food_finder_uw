@@ -2,49 +2,69 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
+// This class represents a position provider. It provides
+// latitude, longitude, and some status information to its
+// consumers.
 class PositionProvider extends ChangeNotifier {
   double latitude = 0;
   double longitude = 0;
-  bool isKnown = false;
+  bool _isKnown = false; // True if app knows user's position.
+  bool _failedToLoad = false; // True if the app fails to determine user's position. May seem similar to _isKnown, but has slightly different uses.
   late final Timer _timer;
 
-  // Constructor for PositionProvider class that
-  // initializes a periodic Timer to update user's
-  // position every second
-
+  // Constructor for PositionProvider class that initializes
+  // a periodic Timer to update user's position every second.
   PositionProvider() {
     _timer = Timer.periodic(const Duration(seconds: 1), _updatePosition);
   }
 
+  // Updates the position (i.e. latitude and longitude fields).
+  // Sets _failedToLoad to true if unable to determine position.
+  // Parameter:
+  // - Timer timer: the periodic Timer initiated in constructor
   void _updatePosition(Timer timer) async {
     try {
       final pos = await _determinePosition();
       updatePosition(pos.latitude, pos.longitude);
     } catch (_) {
-      isKnown = false;
+      _failedToLoad = true;
+      _isKnown = false;
     }
   }
 
+  // Helper method for _updatePosition; does the actual updating.
+  // Sets fields and notifies listeners.
+  // Parameters:
+  // - double latitude: new latitude to update to
+  // - double longitude: new longitude to update to
   void updatePosition(double latitude, double longitude) {
     this.latitude = latitude;
     this.longitude = longitude;
-    isKnown = true;
+    _isKnown = true;
+    _failedToLoad = false;
     notifyListeners();
   }
 
+  // Cleaning up after ourselves; disposes the timer.
   @override 
   dispose(){
     _timer.cancel();
     super.dispose();
   }
+  
+  // Getter for whether there was an error or exception caught 
+  // loading the position or accessing location permissions.
+  bool get loadFailure {
+    return _failedToLoad;
+  }
 
-  // Getter for boolean field isKnown
+  // Getter for boolean field isKnown; whether the provider knows
+  // the user's position or not.
   bool get status {
-    return isKnown;
+    return _isKnown;
   }
 
   /// Determine the current position of the device.
-  ///
   /// When the location services are not enabled or permissions
   /// are denied the `Future` will return an error.
   Future<Position> _determinePosition() async {

@@ -3,18 +3,26 @@ import 'package:food_finder/providers/weather_provider.dart';
 import 'package:http/http.dart' as http;
 import 'package:food_finder/weather_conditions.dart';
 
+// This class represents a weather checker. It stores coordinates for a location,
+// call an API to check the current weather at that location, and update the stored
+// location to a new coordinate pair.
 class WeatherChecker {
   final WeatherProvider weatherProvider;
-  double _latitude = 200; // Allen Center is here, per Google Maps; default location prior to loading
+  double _latitude = 200; // Default coordinates prior to loading; this is ok because these are invalid coordinates on a map.
   double _longitude = 200;
 
   WeatherChecker(this.weatherProvider);
 
+  // Updates latitude and longitude with given values.
+  // Parameters:
+  // - double latitude: new latitude
+  // - double longitude: new longitude
   updateLocation(double latitude, double longitude) {
     _latitude = latitude;
     _longitude = longitude;
   }
 
+  // Fetches and updates the weather from an API at the provided latitude and longitude.
   fetchAndUpdateCurrentSeattleWeather() async {
     var client = http.Client();
     try {
@@ -40,12 +48,14 @@ class WeatherChecker {
         }
       }
     } catch (_) {
-      // TODO(optional): Find a way to have the UI let the user know that we haven't been able to update data successfully
+      // Catch implemented further down.
     } finally {
       client.close();
     }
   }
 
+  // Simplifies the weather condition to one of four possible conditions:
+  // rainy, gloomy, sunny, and unknown.
   WeatherCondition _shortForecastToCondition(String shortForecast) {
     final lowercased = shortForecast.toLowerCase();
     if (lowercased.startsWith('rain') || lowercased.startsWith('showers')) {
