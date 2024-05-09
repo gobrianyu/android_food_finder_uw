@@ -8,6 +8,7 @@ class WeatherProvider extends ChangeNotifier {
   WeatherCondition condition = WeatherCondition.unknown; // Weather condition is set to unknown be default.
   bool isLoaded = false; // True when weather information has been updated and is not unknown.
 
+
   // Updates weather condition to provided weather condition.
   // Parameters:
   // - int newTempFarenheit: template parameter (that's also incorrectly spelled); not used in app

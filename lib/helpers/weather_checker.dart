@@ -13,6 +13,7 @@ class WeatherChecker {
 
   WeatherChecker(this.weatherProvider);
 
+
   // Updates latitude and longitude with given values.
   // Parameters:
   // - double latitude: new latitude
@@ -21,6 +22,7 @@ class WeatherChecker {
     _latitude = latitude;
     _longitude = longitude;
   }
+
 
   // Fetches and updates the weather from an API at the provided latitude and longitude.
   fetchAndUpdateCurrentSeattleWeather() async {
@@ -48,11 +50,12 @@ class WeatherChecker {
         }
       }
     } catch (_) {
-      // Catch implemented further down.
+      // Catch implemented further down in a different class.
     } finally {
       client.close();
     }
   }
+
 
   // Simplifies the weather condition to one of four possible conditions:
   // rainy, gloomy, sunny, and unknown.

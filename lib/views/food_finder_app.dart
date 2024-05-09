@@ -53,12 +53,14 @@ class _FoodFinderAppState extends State<FoodFinderApp> {
     });
   }
 
+
   // Cleaning up after ourselves: cancels and disposes our timer.
   @override 
   dispose(){
     _checkerTimer.cancel();
     super.dispose();
   }
+
 
   // Builds the app from provided context.
   // Parameter:
@@ -92,6 +94,7 @@ class _FoodFinderAppState extends State<FoodFinderApp> {
     );
   }
 
+
   // UI for when location is successfully loaded. Displays app bar with current location and
   // weather, alongside a scrollable list of nearby venues sorted in order by distance away.
   // Will push locations with patios to users when the weather is sunny.
@@ -117,6 +120,7 @@ class _FoodFinderAppState extends State<FoodFinderApp> {
       ]
     );
   }
+
 
   // UI for when app fails to find user's location; will prompt user with on-screen text
   // to check their location permissions in settings.
@@ -162,6 +166,7 @@ class _FoodFinderAppState extends State<FoodFinderApp> {
       ]
     );
   }
+
 
   // UI for while app is still loading the user's location (typically during startup).
   // Parameters:

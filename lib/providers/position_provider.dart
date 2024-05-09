@@ -12,11 +12,13 @@ class PositionProvider extends ChangeNotifier {
   bool _failedToLoad = false; // True if the app fails to determine user's position. May seem similar to _isKnown, but has slightly different uses.
   late final Timer _timer;
 
+
   // Constructor for PositionProvider class that initializes
   // a periodic Timer to update user's position every second.
   PositionProvider() {
     _timer = Timer.periodic(const Duration(seconds: 1), _updatePosition);
   }
+
 
   // Updates the position (i.e. latitude and longitude fields).
   // Sets _failedToLoad to true if unable to determine position.
@@ -32,6 +34,7 @@ class PositionProvider extends ChangeNotifier {
     }
   }
 
+
   // Helper method for _updatePosition; does the actual updating.
   // Sets fields and notifies listeners.
   // Parameters:
@@ -45,6 +48,7 @@ class PositionProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+
   // Cleaning up after ourselves; disposes the timer.
   @override 
   dispose(){
@@ -52,11 +56,13 @@ class PositionProvider extends ChangeNotifier {
     super.dispose();
   }
   
+
   // Getter for whether there was an error or exception caught 
   // loading the position or accessing location permissions.
   bool get loadFailure {
     return _failedToLoad;
   }
+
 
   // Getter for boolean field isKnown; whether the provider knows
   // the user's position or not.
@@ -64,6 +70,9 @@ class PositionProvider extends ChangeNotifier {
     return _isKnown;
   }
 
+
+  /// Code copied from https://pub.dev/packages/geolocator.
+  ///
   /// Determine the current position of the device.
   /// When the location services are not enabled or permissions
   /// are denied the `Future` will return an error.

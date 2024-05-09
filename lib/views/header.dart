@@ -222,7 +222,9 @@ class WeatherHeader extends StatelessWidget {
     // Case where location has successfully loaded.
     return Semantics(
       // Semantics label correctly reads out current location as latitude (north/south), longitude (east, west).
-      label: 'App bar text. Your current location is ' '${latitude.abs().toStringAsFixed(2)} ${latitude>0?'north':'south'}, ${longitude.abs().toStringAsFixed(2)} ${longitude>0?'east':'west'}.',
+      label: 'App bar text. Your current location is'
+             ' ${latitude.abs().toStringAsFixed(2)} ${latitude > 0 ? 'north' : 'south'},'
+             ' ${longitude.abs().toStringAsFixed(2)} ${longitude > 0 ? 'east' : 'west'}.',
       child: ExcludeSemantics(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

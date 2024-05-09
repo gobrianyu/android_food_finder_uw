@@ -16,7 +16,7 @@ void main() {
   const dataPath = 'assets/venues.json';
   WidgetsFlutterBinding.ensureInitialized();
   loadVenuesDB(dataPath).then((value) => runApp(
-    MultiProvider(
+    MultiProvider( // Our app's providers.
       providers: [
         ChangeNotifierProvider<PositionProvider>(create: (context) => PositionProvider()),
         ChangeNotifierProvider<WeatherProvider>(create: (context) => WeatherProvider()),

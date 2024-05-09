@@ -7,22 +7,21 @@ CSE netid: brian127
 
 email: brian127@uw.edu
 
+
 ## Design Vision
-Tell us about what your design vision was.
- - Functionally
- - Aesthetically
- - How are you nudging people toward patios on sunny days?
 
-Where in your repo can we find the sketches that you made? 
+**Functionally:** I had planned to make a relatively barebones, one-tab scrollable interface that would present to the user a list of venues nearby sorted in order from nearest to furthest. Basic information such as cuisine genre and whether or not the venue had a patio would be provided in the form of 'tags' (little icons). If the user found interest in a location, tapping on the venue card would open an external browser directly to that venue's website (if applicable). This app serves more as a portal to browse locations before redirecting you elsewhere to refine your plans. Other information such as weather and location is also provided in the app bar or header.
 
-If your final design changed from your initial sketches please explain what changed and why.
+**Aesthetically:** The original plan was to theme the app based on the weather (i.e. moody grey background in gloomy weather, bright yellow background in sunny weather). I ended up opting for a fixed app theme to (1) give myself less work and (2) so that the app didn't center around weather too much. It's a food app after all; who wants to plan their lunch in a dull grey app? I initially also wanted to layout the venues in a 2-wide grid (remnants of this attempt can be found in the code...) but ended up listing them one by one. There simply wasn't enough room to squeeze two venues side-by-side with the way I wanted to display each venue. As a bonus, I ended up downloading and adding images for each venue (and editing each entry in `venues.json` to have an image property). All venue's images are found on their respective websites, listed in `venues.json`.
+
+**Nudging:** I altered my venue sorting algorithm to check the weather prior to sorting. If the weather wasn't sunny, it would sort by distance as usual. If the weather was sunny, however, it would prioritise sorting locations with patios by reducing their internal distance value before sorting. (This does not affect the actual distance displayed to the user).
+
+A brainstorm sketch can be found under `assets/` folder titled `food_finder_sketch.jpg`.
+
 
 ## Resources Used
-Cite anything (website or other resource) or anyone that assisted you in creating your solution to this assignment.
 
-Remember to include all online resources (other than information learned in lecture or section and android documentation) such as Stack Overflow, other blogs, students in this class, or TAs and instructors who helped you during Office Hours. If you did not use any such resources, please state so explicitly.
-
-Answer here: 
+Comprehensive list of online resources and documentation used: 
 - https://dart.dev/guides/libraries/futures-error-handling
 - https://api.flutter.dev/flutter/dart-async/Future/then.html
 - https://stackoverflow.com/questions/73352447/why-visual-studio-code-does-not-recognize-my-phone
@@ -68,36 +67,33 @@ Answer here:
 - https://stackoverflow.com/questions/68284367/row-mainaxisalignment-not-working-with-fittedbox
 - https://api.flutter.dev/flutter/dart-core/num/abs.html
 
+Thank you to Jacklyn Cui for auditing the app.
+
+
 ## Reflection Prompts
 
 ### New Learnings
-What new tools, techniques, or other skills did you learn while doing this assignment?
 
-How do you think you might use what you learned in the future?
+A few new tools I learned and used during this project:
+- Editing xml files to add android permissions in order to get the geolocator to work.
+- Gained experience working with futures.
+- Learned how to launch urls from an app.
+- First time using scroll views (incorrectly haha).
 
-- Went into xml files to fix some compatibility issues in order to get the geolocator to work
-- Gained experience working with futures
-- Learned how to put launch urls from an app
-- First time using scroll views
+I can see tools such as futures being extremely useful in future projects.
 
 ## Challenges
-What was hard about doing this assignment?
-What did you learn from working through those challenges?
-How could the assignment be improved for future years?
 
-- Time management hahaha
-- There's still so much more I want to do with this assignment, and there are still 
-  some wrapping issues I would like to fix up for the resubmission cycle.
-- I do think this project is maybe too open ended. I ended up planning out far more than 
-  I realized I could pull of within a week (taking into account all the homework I also
-  had to do for my other classes)
+- Time management, hahaha...
+- There was far too much I wanted to add to my app. Some extra components or features (e.g. adding photos) took so much extra time that resulted in me missing the initial submission cycle. Learning to hold my creative side back in future projects will be important.
+- I do think this project was perhaps too open ended. I ended up planning out far more than I realized I could pull off within a week (taking into account all the work I also had to do elsewhere).
+
 
 ### Mistakes
-What is one mistake that you made or misunderstanding that you had while you were completing this assignment?
 
-What is something that you learned or will change in the future as a result of this mistake or misunderstanding?
+Ugh where do I start? The number of times this darn app crashed on me was so frustrating. Learning to read the spec carefully is also a mistake I have to learn from. I ended up digging through forums online trying to figure out why my geolocator wasn't working just because I missed a line in the spec. I made lots of mistakes with general usage of different widgets as well (such as with scroll views), and especially when I was working with futures.
 
-Ugh where do I start? The number of times this darn app crashed on me was so frustrating. As I hinted at earlier, I ended up digging through forums online trying to figure out why the _determinePosition function I copied in just wasn't working. In the end I solved it by adding two new permissions in an android xml file. I made lots of mistakes with general usage of different widgets as well, and especially when I was working with futures.
 
 ### Optional Challenges
-Tell us about what you did, learned, and struggled with while tackling some of the optional challenges.
+
+I did end up adding url launching into my app. I hadn't realised it was an optional extension and had just added it on a whim. Funny to see I'm on a similar wavelength as the project designer!
