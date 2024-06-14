@@ -2,7 +2,7 @@
 
 **App developed by Brian Yu for CSE 340 class at University of Washington**
 
-This is an android (iOS not tested, but may work) food finder app (similar to barebones [Uber Eats](https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=en_CA)). This project queries user's location to determine distance from venues real time. Venues displayed are fixed and scope is limited to select locations around University of Washington, Seattle.
+This is an android (iOS not tested, but may work) food finder app (similar to barebones [Uber Eats](https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=en_CA)). This project queries user's location using Flutter's [geolocator package](https://pub.dev/packages/geolocator) to determine distance from venues real time. Venues displayed are fixed and scope is limited to select locations around University of Washington, Seattle.
 
 Features:
 - One-tab scrollable interface of available venues, sorted in order from nearest to furthest (from user location).
