@@ -14,11 +14,11 @@ Features:
 
 This app serves more as a portal to browse locations before redirecting you elsewhere to refine your plans.
 
-A brainstorm sketch can be found under `assets/` folder titled `food_finder_sketch.jpg`.
+A brainstorm sketch can be found under `assets/food_finder_sketch.jpg`.
 
 <img src="./assets/ios_food_finder.png" alt="Screenshot of app's main page" width="200"/>
 
-*All venue images are taken from their respective websites, listed in `venues.json`.*
+*All venue images are taken from their respective websites, listed in `assets/venues.json`.*
 
 
 ## Resources Used
